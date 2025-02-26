@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->decimal('price', 10, 2);
-            $table->enum('status', ['in_stock', 'out_stock'])->default('in_stock');
+            $table->integer('stock')->default(0);
             $table->timestamps();
         });
     }
