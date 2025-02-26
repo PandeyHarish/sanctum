@@ -1,0 +1,222 @@
+{
+    "info": {
+        "_postman_id": "a205341f-2ac1-4291-96e6-0d6ed9ea6166",
+        "name": "bitflux",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "get user status",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/users?status=inactive",
+                    "query": [
+                        {
+                            "key": "status",
+                            "value": "inactive"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api",
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer 12|gsfOUcmSD6yiYMSURum4zWlY4AC28m0Pn4fMROMnc3d8510c"
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/api/logout",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/logout",
+                    "path": [
+                        "api",
+                        "logout"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer 11|6NjQrtkaQkF6TeoRhcpYx68RwYwaaRsyyusGOjL50c7f99c6"
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "bitfluxlogin",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/login",
+                    "path": [
+                        "api",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "$accessToken"
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "email",
+                            "value": "harish@gmail.com",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "12345",
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "bitfluxregister",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/register",
+                    "path": [
+                        "api",
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "name",
+                            "value": "hairsh",
+                            "type": "default"
+                        },
+                        {
+                            "key": "email",
+                            "value": "harish@gmail.com",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "12345",
+                            "type": "default"
+                        },
+                        {
+                            "key": "c_password",
+                            "value": "12345",
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/api/orders",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/order",
+                    "path": [
+                        "api",
+                        "order"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer  1|q7L30D3GJRDQOX2zfPkmVOVhxP3x3r8qxc4rxoPPdf0a68d5"
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ]
+            }
+        }
+    ]
+}
